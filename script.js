@@ -33,7 +33,15 @@ var fruits = [
 ];
 
 /*
-Using an if...else statement, to check the size of the fruits array. If it's less than 5, output to the console "Only a few fruits!". If it's more than 5, output to the console, "Nice list of fruits.". If the list is any other size, output "FRUUUITS!!".
+Using an if...else statement, to check the size of the fruits array. 
+
+If it's less than 5, 
+output to the console "Only a few fruits!". 
+
+If it's more than 5, 
+output to the console, "Nice list of fruits.". 
+
+If the list is any other size, output "FRUUUITS!!".
 */
 
 if (fruits.length < 5) {
@@ -42,9 +50,29 @@ if (fruits.length < 5) {
     console.log("Nice list of fruits.");
 } else {
     console.log("FRUUUITS!!");
-}
+};
 
-//Using a switch statement, output to the console the first item in the fruits array's price (only price, nothing else). Apples: $0.99; Oranges: $1.05; Pears: $1.50; Bananas: $0.49; Cherries: $3.01; The output we should see in the console should be "$0.99". Note: I want to see the whole switch statement, such that if I change the fruits's first item, the output price will work.
+/*
+Using a switch statement, output to the console the first item in the fruits array's price (only price, nothing else). Apples: $0.99; Oranges: $1.05; Pears: $1.50; Bananas: $0.49; Cherries: $3.01; The output we should see in the console should be "$0.99". Note: I want to see the whole switch statement, such that if I change the fruits's first item, the output price will work.
+*/
+var askFruit = prompt("Enter a fruit item.");
 
+switch (askFruit) {
+    case fruits[0]:
+        console.log("$0.99");
+        break;
+    case fruits[1]:
+        console.log("$1.05");
+        break;
+    case fruits[2]:
+        console.log("$1.50");
+        break;
+    case fruits[3]:
+        console.log("$0.49");
+        break;
+    case fruits[4]:
+        console.log("$3.01");
+        break;
+};
 
 console.log(name, age, fruits);
