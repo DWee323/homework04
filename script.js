@@ -31,8 +31,8 @@ if (fruits.length < 5) {
 /*
 to Ali: I am not quite sure of what the last task means. Initially I left the cases to be "fruits[x]", rather than exact names to preserve the price return even when the items within the array changed.. But now I think what you mean is let each item's price be matched so whatever fruit you type in, you get the matched price.
 */
-var askFruit = prompt("Enter a fruit item among: Apples, Oranges, Pears, Bananas, Cherries");
-switch (askFruit) {
+var fruitChoice = prompt("Enter a fruit item among: Apples, Oranges, Pears, Bananas, Cherries");
+switch (fruitChoice) {
     case "Apples":
         console.log("$0.99");
         break;
